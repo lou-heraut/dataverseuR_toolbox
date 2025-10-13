@@ -41,7 +41,7 @@ META$distributorLogoURL = "https://s3.fr-par.scw.cloud/rdg-portal/logos-macarons
 
 META$dsDescriptionValue = "Indicateurs de séries par horizons temporels des débits journaliers issus des 9 modèles hydrologiques Explore2 pour la réanalyse SAFRAN. Ces fichiers NetCDF sont disponibles au téléchargement dans la collection <a href='https://entrepot.recherche.data.gouv.fr/dataverse/explore2-projections_hydrologiques'>Explore2 - Projections hydrologiques</a>.<br><br>
 
-Ce dépôt regroupe un tableau 2D par indicateur et chaîne de simulation, c'est-à-dire, par modèle hydrologique HM. Ces données sont brutes et contiennent donc des chaînes de projections jugées aberrantes / horsains qu'il est possible de filter grâce à des <a href='https://doi.org/10.57745/YZNENQ'>métadonnées supplémentaires</a>. Pour des raisons techniques, ces indicateurs sont regroupés par dossiers compressés selon les différentes parties du régime hydrologique. Retrouvez davantage d'information sur la chaîne de modélisation du climat dans le rapport <a href='https://doi.org/10.57745/PUR7ML'>https://doi.org/10.57745/PUR7ML</a>.<br><br>
+Ce dépôt regroupe un tableau 2D par indicateur et chaîne de simulation, c'est-à-dire, par modèle hydrologique HM. Ces données sont brutes et contiennent donc des chaînes de projections jugées aberrantes / horsains qu'il est possible de filter grâce à des <a href='https://doi.org/10.57745/YZNENQ'>métadonnées supplémentaires</a>. Pour des raisons techniques, ces indicateurs sont regroupés par dossiers compressés selon les différentes parties du régime hydrologique. Retrouvez davantage d'informations sur la chaîne de modélisation du climat dans le rapport <a href='https://doi.org/10.57745/PUR7ML'>https://doi.org/10.57745/PUR7ML</a>.<br><br>
 
 La description des modèles hydrologiques utilisés est disponible dans les annexes du rapport <a href='https://doi.org/10.57745/S6PQXD'>https://doi.org/10.57745/S6PQXD</a>. Retrouvez le diagnostic des modèles hydrologiques résumé à l'échelle des régions hydrologiques dans les fiches téléchargeables ici : <a href='https://doi.org/10.57745/DMFUXW'>https://doi.org/10.57745/DMFUXW</a>.<br><br>
 
@@ -52,7 +52,7 @@ La description des modèles hydrologiques utilisés est disponible dans les anne
 <li>Liste des simulations des chaînes de projections jugées aberrantes / horsains : <a href='https://doi.org/10.57745/YZNENQ'>https://doi.org/10.57745/YZNENQ</a></li>
 <li>Récapitulatif des années pivots utilisées pour la TRACC : <a href='https://doi.org/10.57745/DCOQM6'>https://doi.org/10.57745/DCOQM6</a></li></ul>
 
-<b>Décomposition des chaînes de caractère formant le nom des fichiers parquet, séparées par des \"_\"</b> :<br>
+<b>Décomposition des chaînes de caractères formant le nom des fichiers parquet, séparées par des \"_\"</b> :<br>
 {1} <i>Indicateur</i> : Le nom de l’indicateur, du type de statistique observée<br>
 {2} <i>Échantillonnage</i> : Échantillonnage temporel sur laquelle est calculé l’indicateur<br>
 &#8594; {1}_{2} <i>Variable</i> : Variable résultante d'un indicateur temporellement contextualisé<br>
@@ -65,7 +65,7 @@ La description des modèles hydrologiques utilisés est disponible dans les anne
 {8} <i>HM</i> : Identifiant du modèle hydrologique<br>
 {9} <i>Futur</i> : Période futur (fut-YYYYMMDD-YYYYMMDD)<br><br>
 
-<b>Les colonnes des fichier parquet sont</b> : <ul>
+<b>Les colonnes des fichiers parquet sont</b> : <ul>
 <li><i>EXP</i> : Voir ci-dessus</li>
 <li><i>GCM</i> : Voir ci-dessus</li>
 <li><i>RCM</i> : Voir ci-dessus</li>

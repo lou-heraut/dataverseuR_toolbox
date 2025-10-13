@@ -31,9 +31,9 @@ to_do = c(
     # "get_metadata"
     "search_datasets",
     # "create_datasets"
-    # "modify_datasets"
+    "modify_datasets"
     # "add_file"
-    "add_readme"
+    # "add_readme"
     # "rename_files"
     # "delete_files"
     # "delete_readme"
@@ -121,7 +121,7 @@ if ("create_datasets" %in% to_do |
             if ("create_datasets" %in% to_do |
                 "modify_datasets" %in% to_do) {
                 metadata_template_path =
-                    file.path(metadata_template_dir, "all.R")
+                    file.path(metadata_template_dir, "all.yml")
                 metadata_file = readLines(metadata_template_path)
                 metadata_file = gsub("[{]RCP[}]",
                                      exp_name, metadata_file)
@@ -150,6 +150,9 @@ if ("create_datasets" %in% to_do |
                                      dataset_info$url2,
                                      metadata_file)
                 
+                metadata_file = gsub("[{]country1[}]",
+                                     "France",
+                                     metadata_file)
                 metadata_file = gsub("[{]coverage1[}]",
                                      dataset_info$coverage1,
                                      metadata_file)
@@ -158,21 +161,22 @@ if ("create_datasets" %in% to_do |
                         !grepl("coverage2", metadata_file)
                     metadata_file = metadata_file[Ok]
                 } else {
+                    metadata_file = gsub("[{]country2[}]",
+                                         "France",
+                                         metadata_file)
                     metadata_file = gsub("[{]coverage2[}]",
                                          dataset_info$coverage2,
                                          metadata_file)
                 }
+                
                 metadata_path = file.path(output_dirpath,
                                           paste0(metadata_filename,
-                                                 ".R"))
+                                                 ".yml"))
                 writeLines(metadata_file, metadata_path)
                 
-                initialise_metadata()
-                source(metadata_path)
-                res = generate_metadata(metadata_dir=output_dirpath,
-                                        metadata_filename=
-                                            metadata_filename,
-                                        verbose=TRUE)
+                metadata_json_path =
+                    generate_metadata_json(metadata_path,
+                                           overwrite=TRUE)
             }
 
             # stop()
@@ -180,8 +184,8 @@ if ("create_datasets" %in% to_do |
             if ("create_datasets" %in% to_do) {
                 dataset_DOI =
                     create_datasets(dataverse=dataverse,
-                                    metadata_path=
-                                        res$metadata_path)
+                                    metadata_json_path=
+                                        metadata_json_path)
             }
 
             if ("modify_datasets" %in% to_do |
@@ -198,7 +202,8 @@ if ("create_datasets" %in% to_do |
                 dataset_DOI =
                     modify_datasets(dataverse=dataverse,
                                     dataset_DOI=dataset_DOI,
-                                    metadata_path=res$metadata_path)
+                                    metadata_json_path=
+                                        metadata_json_path)
             }
             if ("add_file" %in% to_do) {
                 file_Paths = list.files(output_dirpath,

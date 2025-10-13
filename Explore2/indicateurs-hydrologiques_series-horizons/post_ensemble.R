@@ -69,28 +69,27 @@ if ("search_datasets" %in% to_do) {
 if ("create_datasets" %in% to_do |
     "modify_datasets" %in% to_do) {
     metadata_template_path = file.path(metadata_template_dir,
-                                       "ensemble.R")
+                                       "ensemble.yml")
     metadata_path = file.path(path_to_data,
-                              paste0(metadata_filename, ".R"))
+                              paste0(metadata_filename, ".yml"))
     
     file.copy(metadata_template_path, metadata_path, overwrite=TRUE)
     
-    initialise_metadata()
-    source(metadata_template_path)
-    res = generate_metadata(metadata_dir=path_to_data,
-                            metadata_filename=
-                                metadata_filename)
+    metadata_json_path =
+        generate_metadata_json(metadata_path, overwrite=TRUE)
     
     if ("create_datasets" %in% to_do) {
         dataset_DOI =
             create_datasets(dataverse=dataverse,
-                            metadata_path=res$metadata_path)
+                            metadata_json_path=
+                                metadata_json_path)
     }
     if ("modify_datasets" %in% to_do) {
         dataset_DOI = datasets$dataset_DOI
         modify_datasets(dataverse=dataverse,
                         dataset_DOI=dataset_DOI,
-                        metadata_path=res$metadata_path)
+                        metadata_json_path=
+                            metadata_json_path)
     }
     
 }

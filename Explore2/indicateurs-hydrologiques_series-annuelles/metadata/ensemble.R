@@ -1,8 +1,7 @@
 
 META$title = "Ensemble des indicateurs de séries annuelles issus des projections hydrologiques Explore2 du débit"
-META$alternativeTitle = "Collection Explore2 - Indicateurs hydrologiques / Séries annuelles"
 
-META$alternativeURL = "https://entrepot.recherche.data.gouv.fr/dataverse/explore2-indicateurs_hydrologiques-series_annuelles"
+META$alternativeURL = "https://entrepot.recherche.data.gouv.fr/dataverse/explore2-indicateurs_hydrologiques?q=&fq2=kindOfDataOther_ss%3A%22S%C3%A9ries+annuelles+%28d%C3%A9bit%29%22&fq0=subtreePaths%3A%22%2F123960%2F202158%2F642094%22&fq1=dvObjectType%3A%28dataverses+OR+datasets%29&types=dataverses%3Adatasets&sort=dateSort&order="
 
 
 META$datasetContactName1 = "Héraut, Louis"
@@ -42,7 +41,7 @@ META$distributorLogoURL = "https://s3.fr-par.scw.cloud/rdg-portal/logos-macarons
 
 META$dsDescriptionValue = "Ensemble des indicateurs de séries annuelles associés aux 540 chaînes de simulations de débits journaliers issus de 9 modèles hydrologiques pour l'ensemble des projections climatiques Explore2. Ces fichiers résultent de l'agrégation temporelle des simulations hydrologiques sous runs historiques (avant 2005) et des projections hydrologiques (post 2005), fichiers NetCDF disponibles au téléchargement dans la collection <a href='https://entrepot.recherche.data.gouv.fr/dataverse/explore2-projections_hydrologiques'>Explore2 - Projections hydrologiques</a>.<br><br>
 
-Ce dépôt renvoit vers l'ensemble des sous-jeux de données séparés par modèles hydrologiques et scénario RCP. Chacun de ces sous-jeux de données regroupe un tableau 2D par indicateur et chaîne de simulation, c'est-à-dire, scénario d'émission RCP, couple GCM/RCM, correction de biais BC et modèle hydrologique HM. Ces données sont brutes et contiennent donc des chaînes de projections jugées aberrantes / horsains qu'il est possible de filter grâce à des <a href='https://doi.org/10.57745/YZNENQ'>métadonnées supplémentaires</a>. Pour des raisons techniques, ces indicateurs sont regroupés par dossiers compressés selon les différentes parties du régime hydrologique. Retrouvez davantage d'information sur la chaîne de modélisation du climat dans le rapport <a href='https://doi.org/10.57745/PUR7ML'>https://doi.org/10.57745/PUR7ML</a>.<br><br>
+Ce dépôt renvoie vers l'ensemble des sous-jeux de données séparés par modèles hydrologiques et scénario RCP. Chacun de ces sous-jeux de données regroupe un tableau 2D par indicateur et chaîne de simulation, c'est-à-dire, scénario d'émission RCP, couple GCM/RCM, correction de biais BC et modèle hydrologique HM. Ces données sont brutes et contiennent donc des chaînes de projections jugées aberrantes / horsains qu'il est possible de filter grâce à des <a href='https://doi.org/10.57745/YZNENQ'>métadonnées supplémentaires</a>. Pour des raisons techniques, ces indicateurs sont regroupés par dossiers compressés selon les différentes parties du régime hydrologique. Retrouvez davantage d'informations sur la chaîne de modélisation du climat dans le rapport <a href='https://doi.org/10.57745/PUR7ML'>https://doi.org/10.57745/PUR7ML</a>.<br><br>
 
 La description des modèles hydrologiques utilisés est disponible dans les annexes du rapport <a href='https://doi.org/10.57745/S6PQXD'>https://doi.org/10.57745/S6PQXD</a>. Retrouvez le diagnostic des modèles hydrologiques résumé à l'échelle des régions hydrologiques dans les fiches téléchargeables ici : <a href='https://doi.org/10.57745/DMFUXW'>https://doi.org/10.57745/DMFUXW</a>.<br><br>
 
