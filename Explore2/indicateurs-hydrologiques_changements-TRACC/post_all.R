@@ -31,9 +31,9 @@ to_do = c(
     # "get_metadata"
     "search_datasets",
     # "create_datasets"
-    "modify_datasets"
+    # "modify_datasets"
     # "add_file"
-    # "add_readme"
+    "add_readme"
     # "rename_files"
     # "delete_files"
     # "delete_readme"
@@ -60,7 +60,7 @@ if ("get_metadata" %in% to_do) {
 
 if ("search_datasets" %in% to_do) {
     
-    query = 'title:"RCP" AND -title:"ensemble"'
+    query = 'title:"TRACC" AND -title:"ensemble"'
     publication_status =
         # "RELEASED"
         "DRAFT"
@@ -74,7 +74,7 @@ if ("search_datasets" %in% to_do) {
                         dataverse=dataverse,
                         n_search=n_search)
     datasets = dplyr::arrange(datasets, name)
-    datasets
+    datasets$name
 }
 
 
@@ -191,8 +191,7 @@ if ("create_datasets" %in% to_do |
             if ("modify_datasets" %in% to_do |
                 "add_file" %in% to_do |
                 "add_readme" %in% to_do) {
-                dataset = filter(datasets, grepl(exp_name, name) &
-                                           grepl(hm, name))
+                dataset = filter(datasets, grepl(hm, name))
                 dataset_DOI = dataset$dataset_DOI
                 dataset_citation = gsub("Gouv.*", "Gouv",
                                         dataset$citation)
@@ -207,8 +206,8 @@ if ("create_datasets" %in% to_do |
             }
             if ("add_file" %in% to_do) {
                 file_Paths = list.files(output_dirpath,
-                                      pattern=".tar.gz",
-                                      full.names=TRUE)
+                                        pattern=".tar.gz",
+                                        full.names=TRUE)
                 add_datasets_files(dataset_DOI=dataset_DOI,
                                    file_paths=file_Paths)
             }
@@ -293,8 +292,8 @@ if ("rename_files" %in% to_do) {
 
 
 if ("delete_files" %in% to_do) {
-    dataset_DOI = "doi:10.57745/UBCMZK"
-    delete_all_datasets_files(dataset_DOI=dataset_DOI)
+    datasets_DOI = datasets$dataset_DOI
+    delete_all_datasets_files(dataset_DOI=datasets_DOI)
 }
 
 

@@ -30,9 +30,10 @@ dotenv::load_dot_env(file=".env-entrepot")
 to_do = c(
     "search_datasets",
     # "create_datasets"
-    "modify_datasets"
+    # "modify_datasets"
     # "add_file"
-    # "add_readme"
+    "add_readme"
+    # "delete_files"
     # "delete_readme"
 )
 
@@ -97,8 +98,8 @@ if ("create_datasets" %in% to_do |
     if ("add_file" %in% to_do) {
         dataset_DOI = datasets$dataset_DOI
         file_Paths = list.files(path_to_data,
-                              pattern=".tar.gz",
-                              full.names=TRUE)
+                                pattern=".tar.gz",
+                                full.names=TRUE)
         not_addded = add_datasets_files(dataset_DOI=dataset_DOI,
                                         file_paths=file_Paths)
     }
@@ -122,6 +123,13 @@ if ("create_datasets" %in% to_do |
         
     }
 }
+
+
+if ("delete_files" %in% to_do) {
+    datasets_DOI = datasets$dataset_DOI
+    delete_all_datasets_files(dataset_DOI=datasets_DOI)
+}
+
 
 if ("delete_readme" %in% to_do) {
     files = list_datasets_files(datasets$dataset_DOI)

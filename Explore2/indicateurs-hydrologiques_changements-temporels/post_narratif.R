@@ -31,9 +31,10 @@ to_do = c(
     # "get_metadata"
     "search_datasets",
     # "create_datasets"
-    "modify_datasets"
+    # "modify_datasets"
     # "add_file"
-    # "add_readme"
+    "add_readme"
+    # "delete_files"
     # "delete_readme"
 )
 
@@ -128,6 +129,10 @@ if ("create_datasets" %in% to_do |
     }
 }
 
+if ("delete_files" %in% to_do) {
+    datasets_DOI = datasets$dataset_DOI
+    delete_all_datasets_files(dataset_DOI=datasets_DOI)
+}
 
 if ("delete_readme" %in% to_do) {
     files = list_datasets_files(datasets$dataset_DOI)

@@ -31,9 +31,9 @@ to_do = c(
     # "get_metadata"
     "search_datasets",
     # "create_datasets"
-    "modify_datasets"
+    # "modify_datasets"
     # "add_file"
-    # "add_readme"
+    "add_readme"
     # "rename_files"
     # "delete_files"
     # "delete_readme"
@@ -74,7 +74,7 @@ if ("search_datasets" %in% to_do) {
                         dataverse=dataverse,
                         n_search=n_search)
     datasets = dplyr::arrange(datasets, name)
-    datasets
+    datasets$name
     
 }
 
@@ -285,8 +285,8 @@ if ("rename_files" %in% to_do) {
 
 
 if ("delete_files" %in% to_do) {
-    dataset_DOI = "doi:10.57745/UBCMZK"
-    delete_all_datasets_files(dataset_DOI=dataset_DOI)
+    datasets_DOI = datasets$dataset_DOI
+    delete_all_datasets_files(dataset_DOI=datasets_DOI)
 }
 
 

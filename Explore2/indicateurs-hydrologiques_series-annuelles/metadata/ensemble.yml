@@ -10,7 +10,7 @@
 # package to generate a metadata JSON file needed by the Dataverse API
 # to create or modify a dataset.
 
-title: "Ensemble des indicateurs de séries annuelles issus des projections hydrologiques Explore2 du débit"
+title: "Ensemble des indicateurs des séries annuelles issus des projections hydrologiques Explore2"
 
 alternativeURL: "https://entrepot.recherche.data.gouv.fr/dataverse/explore2-indicateurs_hydrologiques?q=&fq2=kindOfDataOther_ss%3A%22S%C3%A9ries+annuelles+%28d%C3%A9bit%29%22&fq0=subtreePaths%3A%22%2F123960%2F202158%2F642094%22&fq1=dvObjectType%3A%28dataverses+OR+datasets%29&types=dataverses%3Adatasets&sort=dateSort&order="
 
@@ -51,17 +51,17 @@ distributor:
   distributorLogoURL: "https://s3.fr-par.scw.cloud/rdg-portal/logos-macarons/Macarons%20Recherche%20Data%20Gouv_Entrep%C3%B4t.png"
 
 dsDescription:
-- dsDescriptionValue: "Ensemble des indicateurs de séries annuelles associés aux 540 chaînes de simulations de débits journaliers issus de 9 modèles hydrologiques pour l'ensemble des projections climatiques Explore2. Ces fichiers résultent de l'agrégation temporelle des simulations hydrologiques sous runs historiques (avant 2005) et des projections hydrologiques (post 2005), fichiers NetCDF disponibles au téléchargement dans la collection <a href='https://entrepot.recherche.data.gouv.fr/dataverse/explore2-projections_hydrologiques'>Explore2 - Projections hydrologiques</a>.<br><br>
+- dsDescriptionValue: "Ensemble des indicateurs des séries annuelles associés aux 540 chaînes de modélisations de débits journaliers issus de 9 modèles hydrologiques pour l'ensemble des projections climatiques Explore2. Ces fichiers résultent de l'agrégation temporelle des simulations hydrologiques sous runs historiques (avant 2005) et des projections hydrologiques (post 2005), fichiers NetCDF disponibles au téléchargement dans la collection <a href='https://entrepot.recherche.data.gouv.fr/dataverse/explore2-projections_hydrologiques'>Explore2 - Projections hydrologiques</a>.<br><br>
 
-Ce dépôt renvoie vers l'ensemble des sous-jeux de données séparés par modèles hydrologiques et scénario RCP. Chacun de ces sous-jeux de données regroupe un tableau 2D par indicateur et chaîne de simulation, c'est-à-dire, scénario d'émission RCP, couple GCM/RCM, correction de biais BC et modèle hydrologique HM. Ces données sont brutes et contiennent donc des chaînes de projections jugées aberrantes / horsains qu'il est possible de filter grâce à des <a href='https://doi.org/10.57745/YZNENQ'>métadonnées supplémentaires</a>. Pour des raisons techniques, ces indicateurs sont regroupés par dossiers compressés selon les différentes parties du régime hydrologique. Retrouvez davantage d'informations sur la chaîne de modélisation du climat dans le rapport <a href='https://doi.org/10.57745/PUR7ML'>https://doi.org/10.57745/PUR7ML</a>.<br><br>
+Ce dépôt renvoie vers un ensemble de jeux de données séparés par modèles hydrologiques et scénario RCP. Chacun de ces jeux de données regroupe un tableau par indicateur et chaîne de simulation, c'est-à-dire, scénario d'émission RCP, couple GCM/RCM, correction de biais BC et modèle hydrologique HM. Ces données sont brutes et contiennent donc des chaînes de projections jugées aberrantes / horsains qu'il est possible de filtrer grâce à des <a href='https://doi.org/10.57745/YZNENQ'>métadonnées supplémentaires</a>. Pour des raisons techniques, ces indicateurs sont regroupés par dossiers compressés selon les différentes phases du régime hydrologique.<br><br>
 
-La description des modèles hydrologiques utilisés est disponible dans les annexes du rapport <a href='https://doi.org/10.57745/S6PQXD'>https://doi.org/10.57745/S6PQXD</a>. Retrouvez le diagnostic des modèles hydrologiques résumé à l'échelle des régions hydrologiques dans les fiches téléchargeables ici : <a href='https://doi.org/10.57745/DMFUXW'>https://doi.org/10.57745/DMFUXW</a>.<br><br>
+La description des chaines de modélisation du climat et celle des modèles hydrologiques sont, respectivement, disponibles dans le rapport <a href='https://doi.org/10.57745/PUR7ML'>https://doi.org/10.57745/PUR7ML</a> et dans les annexes du rapport <a href='https://doi.org/10.57745/S6PQXD'>https://doi.org/10.57745/S6PQXD</a>. Retrouvez le diagnostic des modèles hydrologiques résumé à l'échelle des régions hydrologiques dans les fiches téléchargeables ici : <a href='https://doi.org/10.57745/DMFUXW'>https://doi.org/10.57745/DMFUXW</a>.<br><br>
 
 <b>Métadonnées supplémentaires</b> :<ul>
 <li>Récapitulatif de l'ensemble des indicateurs hydrologiques : <a href='https://doi.org/10.57745/JVNHQL'>https://doi.org/10.57745/JVNHQL</a></li>
 <li>Récapitulatif de l'ensemble des chaînes de simulation : <a href='https://doi.org/10.57745/R6HG5X'>https://doi.org/10.57745/R6HG5X</a></li>
 <li>Description de l'ensemble des points de simulation : <a href='https://doi.org/10.57745/UTKWR5'>https://doi.org/10.57745/UTKWR5</a></li>
-<li>Liste des simulations des chaînes de projections jugées aberrantes / horsains : <a href='https://doi.org/10.57745/YZNENQ'>https://doi.org/10.57745/YZNENQ</a></li>
+<li>Liste des chaînes de modélisation jugées aberrantes / horsains : <a href='https://doi.org/10.57745/YZNENQ'>https://doi.org/10.57745/YZNENQ</a></li>
 <li>Récapitulatif des années pivots utilisées pour la TRACC : <a href='https://doi.org/10.57745/DCOQM6'>https://doi.org/10.57745/DCOQM6</a></li></ul>"
   dsDescriptionLanguage: "French"
 
@@ -126,7 +126,7 @@ series:
 - seriesName: "RCP 8.5"
 
 relatedDataset:
-- relatedDatasetCitation: "Sauquet, Éric; Evin, Guillaume; Siauve, Sonia; Ryma, Aissat; Patrick, Arnaud; Bérel, Maud; Bonneau, Jérémie; Branger, Flora; Caballero, Yvan; Colléoni, François; Ducharne, Agnès; Gailhard, Joël; Garambois, Pierre-André; Habets, Florence; Hendrickx, Frédéric; Héraut, Louis; Hingray, Benoît; Huang, Peng; Jaouen, Tristan; Jeantet, Alexis; Lanini, Sandra; Le Lay, Matthieu; Magand, Claire; Mimeau, Louise; Monteil, Céline; Munier, Simon; Perrin, Charles; Robelin, Olivier; Rousset, Fabienne; Soubeyroux, Jean-Michel; Strohmenger, Laurent; Thirel, Guillaume; Tocquer, Flore; Tramblay, Yves; Vergnes, Jean-Pierre; Vidal, Jean-Philippe, 2025, \"Ensemble des projections hydrologiques Explore2 du débit\""
+- relatedDatasetCitation: "Sauquet, Éric; Evin, Guillaume; Siauve, Sonia; Ryma, Aissat; Patrick, Arnaud; Bérel, Maud; Bonneau, Jérémie; Branger, Flora; Caballero, Yvan; Colléoni, François; Ducharne, Agnès; Gailhard, Joël; Garambois, Pierre-André; Habets, Florence; Hendrickx, Frédéric; Héraut, Louis; Hingray, Benoît; Huang, Peng; Jaouen, Tristan; Jeantet, Alexis; Lanini, Sandra; Le Lay, Matthieu; Magand, Claire; Mimeau, Louise; Monteil, Céline; Munier, Simon; Perrin, Charles; Robelin, Olivier; Rousset, Fabienne; Soubeyroux, Jean-Michel; Strohmenger, Laurent; Thirel, Guillaume; Tocquer, Flore; Tramblay, Yves; Vergnes, Jean-Pierre; Vidal, Jean-Philippe, 2025, \"Ensemble des projections hydrologiques Explore2\""
   relatedDatasetIDType: "doi"
   relatedDatasetIDNumber: "10.57745/YHMBHC"
   relatedDatasetURL: "https://doi.org/10.57745/YHMBHC"

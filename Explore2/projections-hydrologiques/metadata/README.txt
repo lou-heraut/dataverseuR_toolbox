@@ -104,10 +104,10 @@ Métadonnées supplémentaires :
   https://doi.org/10.57745/R6HG5X
 - Description de l'ensemble des points de simulation :
   https://doi.org/10.57745/UTKWR5
-- Liste des simulations des chaînes de projections jugées aberrantes
-  / horsains : https://doi.org/10.57745/YZNENQ
+- Liste des chaînes de modélisation jugées aberrantes / horsains :
+  https://doi.org/10.57745/YZNENQ
 
-Décomposition des chaînes de caractère formant le nom des fichiers
+Décomposition des chaînes de caractères formant le nom des fichiers
 NetCDF, séparées par des "_" :
 {1}:  Variable : Nom de la variable (avec Adjust si les données sont
       corrigées)

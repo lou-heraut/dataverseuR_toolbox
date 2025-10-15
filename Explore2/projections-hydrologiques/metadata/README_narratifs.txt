@@ -90,16 +90,14 @@ téléchargement sur le portail Drias Eau
 (https://www.drias-eau.fr/commande).
 
 Ce dépôt regroupe un fichier NetCDF par couple GCM/RCM, donc par
-narratif pour chaque modèle hydrologique. Retrouvez davantage
-d'information sur la chaîne de modélisation du climat dans les
-métadonnées des fichiers NetCDF et le rapport
-https://doi.org/10.57745/PUR7ML.
+narratif pour chaque modèle hydrologique.
 
-La description des modèles hydrologiques utilisés est disponible dans
-les annexes du rapport https://doi.org/10.57745/S6PQXD. Retrouvez le
-diagnostic des modèles hydrologiques résumé à l'échelle des régions
-hydrologiques dans les fiches téléchargeables ici :
-https://doi.org/10.57745/DMFUXW.
+La description des chaines de modélisation du climat et celle des
+modèles hydrologiques sont, respectivement, disponibles dans le
+rapport https://doi.org/10.57745/PUR7ML et dans les annexes du rapport
+https://doi.org/10.57745/S6PQXD. Retrouvez le diagnostic des modèles
+hydrologiques résumé à l'échelle des régions hydrologiques dans les
+fiches téléchargeables ici : https://doi.org/10.57745/DMFUXW.
 
 Définition des 4 narratifs climatiques :
 - violet (#791F5D) : HadGEM2-ES_historical-rcp85_CCLM4-8-17_ADAMONT
@@ -116,21 +114,20 @@ Métadonnées supplémentaires :
   https://doi.org/10.57745/R6HG5X
 - Description de l'ensemble des points de simulation :
   https://doi.org/10.57745/UTKWR5
-- Liste des simulations des chaînes de projections jugées aberrantes
-  / horsains : https://doi.org/10.57745/YZNENQ
+- Liste des chaînes de modélisation jugées aberrantes / horsains :
+  https://doi.org/10.57745/YZNENQ
 
-Décomposition des chaînes de caractère formant le nom des fichiers
+Décomposition des chaînes de caractères formant le nom des fichiers
 NetCDF, séparées par des "_" :
 {1}:  Variable : Nom de la variable (avec Adjust si les données sont
       corrigées)
 {2}:  Domain : Couverture spatiale des données
 {3}:  GCM-Inst-Model : Identifiant du GCM forçeur = Institut-Modèle
-{4}:  Experiment : Identifiant de l’expérience historique ou future
-      via le scénario
+{4}:  Experiment : Identifiant de l’expérience historique (post 2005)
+      ou future (post 2005)
 {5}:  Member : Numéro du membre de l'ensemble
 {6}:  RCM-Inst-Model : Identifiant du RCM = Institut-Modèle
-{7}:  Version : Identifiant de l’expérience historique ou future via
-      le scénario
+{7}:  Version : Identifiant de l’expérience historique
 {8}:  Bc-Inst-Method-Obs-Period : Identifiant de la méthode de
       correction de biais statistique =
       Institut-Méthode-Réanalyse-Période

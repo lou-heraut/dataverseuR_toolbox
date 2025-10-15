@@ -100,31 +100,30 @@ https://doi.org/10.57745/SRZ8I9
 
 
 DESCRIPTION DES DONNÉES ______________________________________________
-Indicateurs de séries annuelles issus des débits journaliers simulés
+Indicateurs des séries annuelles issus des débits journaliers simulés
 par le modèle hydrologique {HM} pour l'ensemble des
 projections climatiques Explore2 sous {RCP}. Ces fichiers
 résultent de l'agrégation temporelle des simulations hydrologiques
 sous runs historiques (avant 2005) et des projections hydrologiques
 (post 2005), fichiers NetCDF disponibles au téléchargement dans la
-collection Explore2 - Projections hydrologiques
-https://entrepot.recherche.data.gouv.fr/dataverse/explore2-projections_hydrologiques.
+collection Explore2 - Projections hydrologiques :
+https://entrepot.recherche.data.gouv.fr/dataverse/explore2-projections_hydrologiques
 
-Ce dépôt regroupe un tableau 2D par indicateur et chaîne de
-simulation, c'est-à-dire, scénario d'émission RCP, couple GCM/RCM,
-correction de biais BC et modèle hydrologique HM. Ces données sont
-brutes et contiennent donc des chaînes de projections jugées
-aberrantes / horsains qu'il est possible de filter grâce à des
-métadonnées supplémentaires https://doi.org/10.57745/YZNENQ. Pour des
-raisons techniques, ces indicateurs sont regroupés par dossiers
-compressés selon les différentes parties du régime hydrologique.
-Retrouvez davantage d'information sur la chaîne de modélisation
-du climat dans le rapport https://doi.org/10.57745/PUR7ML.
+Ce dépôt regroupe un tableau par indicateur et chaîne de simulation,
+c'est-à-dire, scénario d'émission RCP, couple GCM/RCM, correction de
+biais BC et modèle hydrologique HM. Ces données sont brutes et
+contiennent donc des chaînes de projections jugées aberrantes /
+horsains qu'il est possible de filtrer grâce à des métadonnées
+supplémentaires https://doi.org/10.57745/YZNENQ. Pour des raisons
+techniques, ces indicateurs sont regroupés par dossiers compressés
+selon les différentes phases du régime hydrologique.
 
-La description des modèles hydrologiques utilisés est disponible dans
-les annexes du rapport https://doi.org/10.57745/S6PQXD. Retrouvez le
-diagnostic des modèles hydrologiques résumé à l'échelle des régions
-hydrologiques dans les fiches téléchargeables ici :
-https://doi.org/10.57745/DMFUXW.
+La description des chaines de modélisation du climat et celle des
+modèles hydrologiques sont, respectivement, disponibles dans le
+rapport https://doi.org/10.57745/PUR7ML et dans les annexes du rapport
+https://doi.org/10.57745/S6PQXD. Retrouvez le diagnostic des modèles
+hydrologiques résumé à l'échelle des régions hydrologiques dans les
+fiches téléchargeables ici : https://doi.org/10.57745/DMFUXW.
 
 Métadonnées supplémentaires :
 - Récapitulatif de l'ensemble des indicateurs hydrologiques :
@@ -133,36 +132,36 @@ Métadonnées supplémentaires :
   https://doi.org/10.57745/R6HG5X
 - Description de l'ensemble des points de simulation :
   https://doi.org/10.57745/UTKWR5
-- Liste des simulations des chaînes de projections jugées aberrantes
-  / horsains : https://doi.org/10.57745/YZNENQ
+- Liste des chaînes de modélisation jugées aberrantes / horsains :
+  https://doi.org/10.57745/YZNENQ
 - Récapitulatif des années pivots utilisées pour la TRACC :
   https://doi.org/10.57745/DCOQM6
 
-Décomposition des chaînes de caractère formant le nom des fichiers
+Décomposition des chaînes de caractères formant le nom des fichiers
 parquet, séparées par des "_" :
 {1} Indicateur : Le nom de l’indicateur, du type de statistique
-    observée
+    calculée
 {2} Échantillonnage : Échantillonnage temporel sur laquelle est
     calculé l’indicateur
 -> {1}_{2} Variable : Variable résultante d'un indicateur
            temporellement contextualisé défini dans le
 	   récapitulatif des indicateurs hydrologiques
 	   https://doi.org/10.57745/JVNHQL
-{3} EXP : Identifiant de l’expérience historique ou future via le
-    scénario
+{3} EXP : Identifiant de l’expérience historique (post 2005) ou future
+    (post 2005)
 {4} GCM : Identifiant du GCM forçeur
 {5} RCM : Identifiant du RCM
 {6} BC : Identifiant de la méthode de correction de biais statistique
 {7} HM : Identifiant du modèle hydrologique
 
-Les colonnes des fichier parquet sont :
+Les colonnes des fichiers parquet sont :
 - EXP : Voir ci-dessus
 - GCM : Voir ci-dessus
 - RCM : Voir ci-dessus
 - BC : Voir ci-dessus
 - HM : Voir ci-dessus
-- code : Code à 10 caractère du point de simulation fourni dans la
-  description des points de simualtion https://doi.org/10.57745/UTKWR5
+- code : Code à 10 caractères du point de simulation fourni dans la
+  description des points de simulation https://doi.org/10.57745/UTKWR5
 - date : Date du début de la période annuelle d'agrégation
   (i.e. 2042-05-01 indique que l'année hydrologique commence en mai,
   plus d'information dans les métadonnées de variable)

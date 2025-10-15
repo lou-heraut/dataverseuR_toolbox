@@ -49,7 +49,7 @@ if ("get_metadata" %in% to_do) {
 
 if ("search_datasets" %in% to_do) {
 
-    query = 'title:"ensemble" AND -title:"narratifs" AND -title:"RCP"'
+    query = 'title:"ensemble" AND -title:"narratifs" AND -title:"fiches"'
     publication_status =
         # "RELEASED"
         "DRAFT"
@@ -63,7 +63,7 @@ if ("search_datasets" %in% to_do) {
                         dataverse=dataverse,
                         n_search=n_search)
     datasets = dplyr::arrange(datasets, name)
-    datasets
+    datasets$name
 }
 
 if ("create_datasets" %in% to_do |
