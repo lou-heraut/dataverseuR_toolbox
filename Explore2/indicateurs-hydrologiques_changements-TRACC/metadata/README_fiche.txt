@@ -4,10 +4,11 @@
 |___|/_\_\| .__/|_|\___/|_|  \___|/___|
           |_|
 
-Héraut, Louis, 2025, "Indicateurs de changements par horizons TRACC
-issus de l'ensemble des projections hydrologiques Explore2 du débit
-sous RCP 8.5 (référence 1991-2020) — Données associées aux fiches de
-synthèse TRACC", https://doi.org/10.57745/W0KO1G, Recherche Data Gouv
+Héraut, Louis, 2025, "Indicateurs des changements par niveaux de
+réchauffement TRACC issus de l'ensemble des projections hydrologiques
+Explore2 (référence 1991-2020) — Données de débit et recharge
+associées aux fiches de synthèse TRACC",
+https://doi.org/10.57745/W0KO1G, Recherche Data Gouv
 
 
 INFORMATIONS GENERALES _______________________________________________
@@ -181,3 +182,6 @@ Les colonnes des fichiers parquet sont :
 - code : Code à 10 caractères du point de simulation fourni dans la
   description des points de simulation https://doi.org/10.57745/UTKWR5
 - *Changement* : Voir ci-dessus
+
+Retrouvez des scripts d'aide pour utiliser ces données parquet :
+https://github.com/louis-heraut/Explore2_peche_aux_outils_RDG

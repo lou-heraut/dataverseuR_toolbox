@@ -19,7 +19,8 @@
 # If not, see <https://www.gnu.org/licenses/>.
 
 
-library(dataverseuR)
+devtools::load_all("/home/lheraut/Documents/INRAE/projects/dataverseuR_project/dataverseuR")
+# library(dataverseuR)
 library(dplyr)
 
 dotenv::load_dot_env(file=".env-entrepot")
@@ -32,7 +33,9 @@ to_do = c(
 
 
 if ("get_metadata" %in% to_do) {
-    dataset_DOI = "doi:10.57745/VBNFOR"
-    metadata = get_datasets_metadata(dataset_DOI=dataset_DOI)
-    convert_metadata(metadata)
+    dataset_DOI = "doi:10.57745/W0KO1G"
+    metadata_json_path = "tmp.json"
+    get_datasets_metadata(dataset_DOI, metadata_json_path,
+                          overwrite=TRUE)
+    convert_metadata_to_yml(metadata_json_path, overwrite=TRUE)
 }

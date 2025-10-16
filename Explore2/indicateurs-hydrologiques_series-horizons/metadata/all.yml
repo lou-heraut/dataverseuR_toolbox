@@ -85,7 +85,10 @@ La description des chaines de modélisation du climat et celle des modèles hydr
 <li><i>HM</i> : Voir ci-dessus</li>
 <li><i>code</i> : Code à 10 caractères du point de simulation fourni dans la <a href='https://doi.org/10.57745/UTKWR5'>description des points de simulation</a></li>
 <li><i>date</i> : (optionnelle) Date associée à l'agrégation (plus d'information dans les métadonnées de variable)</li>
-<li><i>*Série*</i> : Voir ci-dessus</li></ul>"
+<li><i>*Série*</i> : Voir ci-dessus</li></ul>
+
+<hr>
+Retrouvez des <a href='https://github.com/louis-heraut/Explore2_peche_aux_outils_RDG'>scripts d'aide</a> pour utiliser ces données parquet."
   dsDescriptionLanguage: "French"
 
 language: "French"
@@ -129,6 +132,8 @@ software:
 
 series:
 - seriesName: "{RCP}"
+
+relatedMaterial: "Retrouvez des <a href='https://github.com/louis-heraut/Explore2_peche_aux_outils_RDG'>scripts d'aide</a> pour utiliser ces données parquet. <https://github.com/louis-heraut/Explore2_peche_aux_outils_RDG>"
 
 relatedDataset:
 - relatedDatasetCitation: "{citation}"

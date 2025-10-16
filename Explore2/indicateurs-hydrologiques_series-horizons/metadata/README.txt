@@ -169,3 +169,6 @@ Les colonnes des fichiers parquet sont :
 - date : (optionnelle) Date associée à l'agrégation (plus
   d'information dans les métadonnées de variable)
 - *Série* : Voir ci-dessus
+
+Retrouvez des scripts d'aide pour utiliser ces données parquet :
+https://github.com/louis-heraut/Explore2_peche_aux_outils_RDG

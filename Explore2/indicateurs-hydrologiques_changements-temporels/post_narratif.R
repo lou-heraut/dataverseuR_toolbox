@@ -29,7 +29,7 @@ dotenv::load_dot_env(file=".env-entrepot")
 
 to_do = c(
     # "get_metadata"
-    "search_datasets",
+    # "search_datasets",
     # "create_datasets"
     # "modify_datasets"
     # "add_file"

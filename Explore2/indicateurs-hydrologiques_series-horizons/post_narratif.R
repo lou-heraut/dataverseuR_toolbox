@@ -32,8 +32,8 @@ to_do = c(
     "search_datasets",
     # "create_datasets"
     # "modify_datasets"
-    "add_file"
-    # "add_readme"
+    # "add_file"
+    "add_readme"
     # "delete_files"
     # "delete_readme"
 )

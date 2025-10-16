@@ -28,12 +28,12 @@ dotenv::load_dot_env(file=".env-entrepot")
 
 to_do = c(
     # "get_metadata"
-    "search_datasets",
-    # "create_datasets"
-    "modify_datasets"
+    # "search_datasets",
+    "create_datasets"
+    # "modify_datasets"
 )
 
-dataverse = "explore2-indicateurs_hydrologiques-changements_TRACC"
+dataverse = "explore2-indicateurs_hydrologiques"
 path_to_data =
     "/media/lheraut/Explore2/hydrological-projections_indicators-TRACC/hydrological-projections_indicators-TRACC_changes-by-warming-level-ref-1976-2005_by-chain_parquet"
 metadata_template_dir = "metadata"

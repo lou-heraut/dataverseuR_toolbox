@@ -166,3 +166,6 @@ Les colonnes des fichiers parquet sont :
   (i.e. 2042-05-01 indique que l'année hydrologique commence en mai,
   plus d'information dans les métadonnées de variable)
 - *Variable* : Voir ci-dessus
+
+Retrouvez des scripts d'aide pour utiliser ces données parquet :
+https://github.com/louis-heraut/Explore2_peche_aux_outils_RDG

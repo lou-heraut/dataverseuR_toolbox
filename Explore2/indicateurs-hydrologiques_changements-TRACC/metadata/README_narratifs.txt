@@ -176,3 +176,6 @@ Les colonnes des fichiers parquet sont :
 - code : Code à 10 caractères du point de simulation fourni dans la
   description des points de simulation https://doi.org/10.57745/UTKWR5
 - *Changement* : Voir ci-dessus
+
+Retrouvez des scripts d'aide pour utiliser ces données parquet :
+https://github.com/louis-heraut/Explore2_peche_aux_outils_RDG

@@ -125,6 +125,8 @@ series:
 - seriesName: "RCP 4.5"
 - seriesName: "RCP 8.5"
 
+relatedMaterial: "Retrouvez des <a href='https://github.com/louis-heraut/Explore2_peche_aux_outils_RDG'>scripts d'aide</a> pour utiliser ces données parquet. <https://github.com/louis-heraut/Explore2_peche_aux_outils_RDG>"
+
 relatedDataset:
 - relatedDatasetCitation: "Sauquet, Éric; Evin, Guillaume; Siauve, Sonia; Ryma, Aissat; Patrick, Arnaud; Bérel, Maud; Bonneau, Jérémie; Branger, Flora; Caballero, Yvan; Colléoni, François; Ducharne, Agnès; Gailhard, Joël; Garambois, Pierre-André; Habets, Florence; Hendrickx, Frédéric; Héraut, Louis; Hingray, Benoît; Huang, Peng; Jaouen, Tristan; Jeantet, Alexis; Lanini, Sandra; Le Lay, Matthieu; Magand, Claire; Mimeau, Louise; Monteil, Céline; Munier, Simon; Perrin, Charles; Robelin, Olivier; Rousset, Fabienne; Soubeyroux, Jean-Michel; Strohmenger, Laurent; Thirel, Guillaume; Tocquer, Flore; Tramblay, Yves; Vergnes, Jean-Pierre; Vidal, Jean-Philippe, 2025, \"Ensemble des projections hydrologiques Explore2\""
   relatedDatasetIDType: "doi"

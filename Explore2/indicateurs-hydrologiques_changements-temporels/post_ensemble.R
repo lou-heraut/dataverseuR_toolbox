@@ -28,12 +28,12 @@ dotenv::load_dot_env(file=".env-entrepot")
 
 to_do = c(
     # "get_metadata"
-    "search_datasets",
-    # "create_datasets"
-    "modify_datasets"
+    # "search_datasets",
+    "create_datasets"
+    # "modify_datasets"
 )
 
-dataverse = "explore2-indicateurs_hydrologiques-changements_horizons"
+dataverse = "explore2-indicateurs_hydrologiques"
 metadata_template_dir = "metadata"
 metadata_filename = "RDG_metadata"
 path_to_data =
