@@ -33,12 +33,12 @@ to_do = c(
     # "create_datasets"
     # "modify_datasets"
     # "add_file"
-    "add_readme"
+    # "add_readme"
     # "rename_files"
     # "delete_files"
     # "delete_readme"
     # "delete_datasets"
-    # "publish_datasets"
+    "publish_datasets"
 )
 
 dataverse = "explore2-indicateurs_hydrologiques-changements_TRACC"
@@ -73,7 +73,7 @@ if ("search_datasets" %in% to_do) {
                         type=type,
                         dataverse=dataverse,
                         n_search=n_search)
-    datasets = dplyr::arrange(datasets, name)
+    datasets = dplyr::arrange(datasets, dplyr::desc(name))
     datasets$name
 }
 
@@ -310,7 +310,7 @@ if ("delete_datasets" %in% to_do) {
 }
 
 if ("publish_datasets" %in% to_do) {
-    publish_datasets(dataset_DOI=datasets$dataset_DOI, type="minor")
+    publish_datasets(dataset_DOI=datasets$dataset_DOI, type="major")
 }
 
 

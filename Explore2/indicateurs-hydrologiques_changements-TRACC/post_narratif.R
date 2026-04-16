@@ -33,9 +33,10 @@ to_do = c(
     # "create_datasets"
     # "modify_datasets"
     # "add_file"
-    "add_readme"
+    # "add_readme"
     # "delete_files"
     # "delete_readme"
+    "publish_datasets"
 )
 
 dataverse = "explore2-indicateurs_hydrologiques-changements_TRACC"
@@ -135,7 +136,6 @@ if ("delete_files" %in% to_do) {
     delete_all_datasets_files(dataset_DOI=datasets_DOI)
 }
 
-
 if ("delete_readme" %in% to_do) {
     files = list_datasets_files(datasets$dataset_DOI)
     readmes = dplyr::filter(files, grepl("README", label))
@@ -143,6 +143,7 @@ if ("delete_readme" %in% to_do) {
                           is_DOI_ID=TRUE)
 }
 
-
-
+if ("publish_datasets" %in% to_do) {
+    publish_datasets(dataset_DOI=datasets$dataset_DOI, type="major")
+}
 

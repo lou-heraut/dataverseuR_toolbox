@@ -1,7 +1,7 @@
 # ░█▀▄░█▀▀▄░▀█▀░█▀▀▄░▄░░░▄░█▀▀░█▀▀▄░█▀▀░█▀▀░█░▒█░▒█▀▀▄
 # ░█░█░█▄▄█░░█░░█▄▄█░░█▄█░░█▀▀░█▄▄▀░▀▀▄░█▀▀░█░▒█░▒█▄▄▀
 # ░▀▀░░▀░░▀░░▀░░▀░░▀░░░▀░░░▀▀▀░▀░▀▀░▀▀▀░▀▀▀░░▀▀▀░▒█░▒█ _______________
-# GitHub : https://github.com/louis-heraut/dataverseuR
+# GitHub : https://github.com/lou-heraut/dataverseuR
 # Author : Héraut, Louis
 # Affiliation : INRAE, UR RiverLy, Villeurbanne, France
 # ORCID : 0009-0006-4372-0923
@@ -155,7 +155,7 @@ software:
 series:
 - seriesName: TRACC
 
-relatedMaterial: 'Retrouvez une aide pour utiliser ces données parquet : <a href="https://github.com/louis-heraut/Explore2_peche_aux_outils_RDG">https://github.com/louis-heraut/Explore2_peche_aux_outils_RDG</a>'
+relatedMaterial: 'Retrouvez une aide pour utiliser ces données parquet : <a href="https://github.com/lou-heraut/Explore2_peche_aux_outils_RDG">https://github.com/lou-heraut/Explore2_peche_aux_outils_RDG</a>'
 
 relatedDataset:
 - relatedDatasetCitation: Sauquet, Éric; Evin, Guillaume; Siauve, Sonia; Ryma, Aissat;

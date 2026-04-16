@@ -1,7 +1,7 @@
 # ░█▀▄░█▀▀▄░▀█▀░█▀▀▄░▄░░░▄░█▀▀░█▀▀▄░█▀▀░█▀▀░█░▒█░▒█▀▀▄
 # ░█░█░█▄▄█░░█░░█▄▄█░░█▄█░░█▀▀░█▄▄▀░▀▀▄░█▀▀░█░▒█░▒█▄▄▀
 # ░▀▀░░▀░░▀░░▀░░▀░░▀░░░▀░░░▀▀▀░▀░▀▀░▀▀▀░▀▀▀░░▀▀▀░▒█░▒█ _______________
-# GitHub : https://github.com/louis-heraut/dataverseuR
+# GitHub : https://github.com/lou-heraut/dataverseuR
 # Author : Héraut, Louis
 # Affiliation : INRAE, UR RiverLy, Villeurbanne, France
 # ORCID : 0009-0006-4372-0923
@@ -85,7 +85,7 @@ La description des chaines de modélisation du climat et celle des modèles hydr
 <li><i>*Variable*</i> : Voir ci-dessus</li></ul>
 
 <hr>
-Retrouvez des <a href='https://github.com/louis-heraut/Explore2_peche_aux_outils_RDG'>scripts d'aide</a> pour utiliser ces données parquet."
+Retrouvez des <a href='https://github.com/lou-heraut/Explore2_peche_aux_outils_RDG'>scripts d'aide</a> pour utiliser ces données parquet."
   dsDescriptionLanguage: "French"
 
 language: "French"
@@ -130,7 +130,7 @@ software:
 series:
 - seriesName: "{RCP}"
 
-relatedMaterial: "Retrouvez des <a href='https://github.com/louis-heraut/Explore2_peche_aux_outils_RDG'>scripts d'aide</a> pour utiliser ces données parquet. <https://github.com/louis-heraut/Explore2_peche_aux_outils_RDG>"
+relatedMaterial: "Retrouvez des <a href='https://github.com/lou-heraut/Explore2_peche_aux_outils_RDG'>scripts d'aide</a> pour utiliser ces données parquet. <https://github.com/lou-heraut/Explore2_peche_aux_outils_RDG>"
 
 relatedDataset:
 - relatedDatasetCitation: "{citation}"

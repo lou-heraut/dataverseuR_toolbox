@@ -181,4 +181,4 @@ Les colonnes des fichiers parquet sont :
 - *Changement* : Voir ci-dessus
 
 Retrouvez des scripts d'aide pour utiliser ces données parquet :
-https://github.com/louis-heraut/Explore2_peche_aux_outils_RDG
+https://github.com/lou-heraut/Explore2_peche_aux_outils_RDG

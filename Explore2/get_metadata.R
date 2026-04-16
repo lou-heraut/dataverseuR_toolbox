@@ -28,8 +28,33 @@ dotenv::load_dot_env(file=".env-entrepot")
 
 
 to_do = c(
-    "get_metadata"
+    "search_datasets"
+    # "get_metadata"
+    # "list_files"
 )
+
+
+if ("search_datasets" %in% to_do) {
+
+    dataverse = "explore2-rapports_techniques"
+    query = "*"
+    publication_status =
+        "RELEASED"
+        # "DRAFT"
+    type = "dataset"
+    n_search = 1000
+    
+    datasets =
+        search_datasets(query=query,
+                        publication_status=publication_status,
+                        type=type,
+                        dataverse=dataverse,
+                        n_search=n_search)
+    datasets = dplyr::arrange(datasets, name)
+    ASHE::write_tibble(datasets,
+                       "explore2-rapports_techniques_datasets.csv")
+}
+
 
 
 if ("get_metadata" %in% to_do) {
@@ -39,3 +64,14 @@ if ("get_metadata" %in% to_do) {
                           overwrite=TRUE)
     convert_metadata_to_yml(metadata_json_path, overwrite=TRUE)
 }
+
+
+if ("list_files" %in% to_do) {
+    files = list_datasets_files("doi:10.57745/QDCSBZ")
+    get_base =
+        "https://entrepot.recherche.data.gouv.fr/api/access/datafile/:persistentId/?persistentId="
+    files$download_api_call = paste0(get_base, files$file_DOI)
+    files = dplyr::select(files, file_DOI, label, download_api_call)
+    ASHE::write_tibble(files, "dataverse_fiche_TRACC.csv")
+}
+

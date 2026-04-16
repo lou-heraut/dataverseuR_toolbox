@@ -4,8 +4,8 @@
 |___|/_\_\| .__/|_|\___/|_|  \___|/___|
           |_|
 
-Héraut, Louis, 2025, "Indicateurs des changements par niveaux de
-réchauffement TRACC issus de l'ensemble des projections hydrologiques
+Héraut, Louis, 2025, "Ensemble des indicateurs des changements par
+niveaux de réchauffement TRACC issus des projections hydrologiques
 Explore2 (référence 1991-2020) — Données de débit et recharge
 associées aux fiches de synthèse TRACC",
 https://doi.org/10.57745/W0KO1G, Recherche Data Gouv
@@ -184,4 +184,4 @@ Les colonnes des fichiers parquet sont :
 - *Changement* : Voir ci-dessus
 
 Retrouvez des scripts d'aide pour utiliser ces données parquet :
-https://github.com/louis-heraut/Explore2_peche_aux_outils_RDG
+https://github.com/lou-heraut/Explore2_peche_aux_outils_RDG
